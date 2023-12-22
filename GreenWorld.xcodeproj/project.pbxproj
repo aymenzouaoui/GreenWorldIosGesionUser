@@ -54,6 +54,8 @@
 		FAA8F7CF2B192F84001FAF0A /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7CE2B192F84001FAF0A /* CustomCorner.swift */; };
 		FAA8F7D12B192FB2001FAF0A /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7D02B192FB2001FAF0A /* CustomShape.swift */; };
 		FAA8F7E22B193415001FAF0A /* ViewportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7E12B193415001FAF0A /* ViewportHelper.swift */; };
+		FAD5FC192B35B90500679FBB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FAD5FC182B35B90500679FBB /* GoogleSignIn */; };
+		FAD5FC1B2B35B90D00679FBB /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FAD5FC1A2B35B90D00679FBB /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,9 +139,11 @@
 			files = (
 				6AFC62922B2C1960003DFDEC /* FacebookAEM in Frameworks */,
 				6AFC62942B2C1963003DFDEC /* FacebookBasics in Frameworks */,
+				FAD5FC1B2B35B90D00679FBB /* GoogleSignInSwift in Frameworks */,
 				6AFC628D2B2C1891003DFDEC /* FacebookLogin in Frameworks */,
 				6AFC62962B2C1967003DFDEC /* FacebookShare in Frameworks */,
 				6AFC628F2B2C1894003DFDEC /* FacebookCore in Frameworks */,
+				FAD5FC192B35B90500679FBB /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +409,8 @@
 				6AFC62912B2C1960003DFDEC /* FacebookAEM */,
 				6AFC62932B2C1963003DFDEC /* FacebookBasics */,
 				6AFC62952B2C1967003DFDEC /* FacebookShare */,
+				FAD5FC182B35B90500679FBB /* GoogleSignIn */,
+				FAD5FC1A2B35B90D00679FBB /* GoogleSignInSwift */,
 			);
 			productName = GreenWorld;
 			productReference = FA884BA42B15134A0039DB3B /* GreenWorld.app */;
@@ -483,6 +489,7 @@
 			packageReferences = (
 				6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				6AFC62872B2BF7BB003DFDEC /* XCRemoteSwiftPackageReference "cloudinary_ios" */,
+				FAD5FC172B35B5E500679FBB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = FA884BA52B15134A0039DB3B /* Products */;
 			projectDirPath = "";
@@ -981,6 +988,14 @@
 				minimumVersion = 4.2.0;
 			};
 		};
+		FAD5FC172B35B5E500679FBB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1008,6 +1023,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookShare;
+		};
+		FAD5FC182B35B90500679FBB /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD5FC172B35B5E500679FBB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		FAD5FC1A2B35B90D00679FBB /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD5FC172B35B5E500679FBB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 

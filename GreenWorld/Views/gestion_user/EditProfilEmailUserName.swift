@@ -79,6 +79,7 @@ struct EditEmail: View {
             
             
             Button(action: {
+               
                 
             }) {
                 Text("Update Profile")

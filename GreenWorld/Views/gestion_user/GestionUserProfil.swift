@@ -5,6 +5,12 @@ struct GestionUserProfil: View {
     @State private var isEditProfileActive = false
     @State private var navigationLinkActive: Bool = false
     @State private var showLogoutConfirmation : Bool = false
+    
+    //@State private var isEditProfileActive = false
+    @State private var isEditPasswordActive = false
+    @State private var isEditEmailActive = false
+
+
 
    // @StateObject var login = Login()
     var body: some View {
@@ -34,7 +40,7 @@ struct GestionUserProfil: View {
                             ZStack {
                               
 
-                                if let imageURL = URL(string: userViewModel.user?.imageRes ?? "") {
+                                if let imageURL = URL(string: userViewModel.user?.imageRes ?? "https://assets.manutd.com/AssetPicker/images/0/0/10/126/687707/Legends-Profile_Cristiano-Ronaldo1523460877263.jpg") {
                                     AsyncImage(url: imageURL) { phase in
                                         switch phase {
                                         case .empty:
@@ -46,10 +52,10 @@ struct GestionUserProfil: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .clipShape(Ellipse()) // Clip the image into an ellipse
-                                                .frame(width: 120, height: 120) // Adjust the size of the clipped image
-                                                .overlay(Ellipse().stroke(Color.green, lineWidth: 3)) // Add a stroke to the clipped image
+                                                .frame(width: 200, height: 200) // Adjust the size of the clipped image
+                                                .overlay(Ellipse().stroke(Color.green, lineWidth: 2)) // Add a stroke to the clipped image
                                                 .shadow(color: Color(red: 0.40, green: 0.40, blue: 0.40, opacity: 0.15), radius: 10, y: 4)
-                                                .position(x: 250, y: -70)
+                                                .position(x: 350, y: 40)
                                         case .failure(let error):
                                             // Erreur lors du chargement de l'image
                                             Text("Erreur de chargement de l'image")
@@ -64,43 +70,43 @@ struct GestionUserProfil: View {
                                 }
                             }
 
-                            .padding(100)
+                            
                         }
                       
                      
                         
                         HStack{
                             VStack{
-                                Text(userViewModel.user?.email ?? "")
+                                Text(userViewModel.user?.email ?? "aymenzouoaui")
                                     .font(.system(size: 22))
                                     .fontWeight(.bold)
                                     .foregroundColor(.black)
-                                    .offset(x: -10, y: -205)
-                                Text(userViewModel.user?.numTel ?? "")
+                                    .offset(x: 10, y: -120)
+                                Text(userViewModel.user?.numTel ?? "+216 95398941")
                                     .font(.system(size: 22))
                                     .fontWeight(.bold)
                                     .foregroundColor(.black)
-                                    .offset(x: -10, y: -200)
+                                    .offset(x: -0, y: -100)
                             }.padding(5)
                                 .offset(x:0 , y: 40)
                             Image(systemName: "checkmark.seal.fill")
                                 .font(.system(size: 35))
                                 .foregroundColor(Color(red: 0.06, green: 0.21, blue: 0.19))
-                                .offset(x: -60, y: -270)
+                                .offset(x: 0, y: -90)
                         }.padding(30)
                         HStack{
-                            Text(userViewModel.user?.score != nil ? String(userViewModel.user!.score!) : "")
+                            Text(userViewModel.user?.score != nil ? String(userViewModel.user!.score!) : "10")
                                 .font(.system(size: 22))
                                 .fontWeight(.bold)
                                 .foregroundColor(.black)
-                                .offset(x: -70, y: -230)
+                                .offset(x: 0, y: -100)
                             
                             
                             Text("Record")
                                 .font(.system(size: 13))
                                 .fontWeight(.light)
                                 .foregroundColor(.black)
-                                .offset(x: -55, y: -230)
+                                .offset(x: 0, y: -100)
                             
                         }.padding(10)
                             .offset(x: 0, y: -100)
@@ -261,7 +267,31 @@ struct GestionUserProfil: View {
                                        )
                                    }
                     
-                    
+                    NavigationLink(destination: GestionUserEditProfil(), isActive: $isEditProfileActive) {
+                                       EmptyView()
+                                   }
+                                   NavigationLink(destination: EditPassword(), isActive: $isEditPasswordActive) {
+                                       EmptyView()
+                                   }
+                                   NavigationLink(destination: EditEmail(), isActive: $isEditEmailActive) {
+                                       EmptyView()
+                                   }
+
+                                   // Buttons to navigate to edit views
+                                   Button("Edit Profile") {
+                                       isEditProfileActive = true
+                                   }
+                                   .buttonStyle(RoundedButtonStyle())
+
+                                   Button("Edit Password") {
+                                       isEditPasswordActive = true
+                                   }
+                                   .buttonStyle(RoundedButtonStyle())
+
+                                   Button("Edit Email") {
+                                       isEditEmailActive = true
+                                   }
+                                   .buttonStyle(RoundedButtonStyle())
                 }
                 
                 
@@ -286,6 +316,17 @@ struct GestionUserProfil: View {
 #Preview {
     GestionUserProfil()
 }
-
+struct RoundedButtonStyle: ButtonStyle {
+       func makeBody(configuration: Configuration) -> some View {
+           configuration.label
+               .font(.headline)
+               .padding()
+               .background(Color.blue)
+               .foregroundColor(.white)
+               .cornerRadius(10)
+               .padding(.horizontal, 20)
+               .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
+       }
+   }
 
 

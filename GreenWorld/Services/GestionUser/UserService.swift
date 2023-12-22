@@ -6,7 +6,7 @@ import Foundation
 
 class UserService {
     static let shared = UserService()
-    private let baseURL = "http://172.20.10.9:9091"
+    private let baseURL = "http://172.18.1.28:9090"
 
     
   

@@ -51,10 +51,10 @@ struct GestionUserEditProfil: View {
                                     .resizable()
                                     .scaledToFit()
                                     .clipShape(Ellipse()) // Clip the image into an ellipse
-                                    .frame(width: 120, height: 120) // Adjust the size of the clipped image
+                                    .frame(width: 200, height: 200) // Adjust the size of the clipped image
                                     .overlay(Ellipse().stroke(Color.green, lineWidth: 3)) // Add a stroke to the clipped image
                                     .shadow(color: Color(red: 0.40, green: 0.40, blue: 0.40, opacity: 0.15), radius: 10, y: 4)
-                                    .position(x: 379, y: 20)
+                                    .position(x: 180, y: 200)
                             case .failure(let error):
                                 // Erreur lors du chargement de l'image
                                 Text("Erreur de chargement de l'image")
@@ -69,8 +69,9 @@ struct GestionUserEditProfil: View {
                     }
                 }
 
-                .padding(10)
+                .padding()
             }
+            
             
             Button(action: {
                

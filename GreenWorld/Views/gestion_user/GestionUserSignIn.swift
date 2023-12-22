@@ -230,24 +230,21 @@ struct GestionUserSignIn: View {
                                                        let pictureUrl = pictureData["data"] as? [String: Any],
                                                        let pictureUrlString = pictureUrl["url"] as? String {
                                                         // Use the retrieved email, first name, last name, and profile picture URL as needed
+                                                        let fullName = "\(firstName) \(lastName)"
                                                         print("Email: \(email)")
-                                                        print("First Name: \(firstName)")
-                                                        print("Last Name: \(lastName)")
+                                                        print("Full Name: \(fullName)")
                                                         print("Profile Picture URL: \(pictureUrlString)")
                                                         
-                                                        // Navigate to the FlotteMainView
+                                                        // Navigate to the desired view
                                                         navigationLinkActive = true
-                                                        print("navigate")
                                                     }
                                                 }
-                                                
-                                                
                                             } else {
                                                 print("Facebook login cancelled")
                                             }
                                         }
                                     }
-                                }) {
+                                }){
                                     HStack {
                                         Image("f")
                                             .resizable()

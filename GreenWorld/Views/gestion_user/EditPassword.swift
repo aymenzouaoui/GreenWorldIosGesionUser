@@ -165,8 +165,6 @@ Spacer(minLength: 120)
 
 
 
-struct EditPassword_Previews: PreviewProvider {
-    static var previews: some View {
-        EditPassword()
-    }
+#Preview {
+    EditPassword()
 }
