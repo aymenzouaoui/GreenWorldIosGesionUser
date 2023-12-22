@@ -3,26 +3,20 @@ import SwiftUI
 struct GestionUserProfil: View {
     @StateObject private var userViewModel = UserViewModel()
     @State private var isEditProfileActive = false
-    @State private var navigationLinkActive: Bool = false
-    @State private var showLogoutConfirmation : Bool = false
-    
-    //@State private var isEditProfileActive = false
     @State private var isEditPasswordActive = false
     @State private var isEditEmailActive = false
+    @State private var showLogoutConfirmation: Bool = false
 
-
-
-   // @StateObject var login = Login()
     var body: some View {
-        NavigationView{
-            
-            
+        NavigationView {
             ZStack {
                 Image("bg")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(.all)
                     .opacity(0.3)
+
+                
                 
                 ScrollView {
                     
@@ -267,66 +261,61 @@ struct GestionUserProfil: View {
                                        )
                                    }
                     
-                    NavigationLink(destination: GestionUserEditProfil(), isActive: $isEditProfileActive) {
-                                       EmptyView()
-                                   }
-                                   NavigationLink(destination: EditPassword(), isActive: $isEditPasswordActive) {
-                                       EmptyView()
-                                   }
-                                   NavigationLink(destination: EditEmail(), isActive: $isEditEmailActive) {
-                                       EmptyView()
-                                   }
-
-                                   // Buttons to navigate to edit views
-                                   Button("Edit Profile") {
-                                       isEditProfileActive = true
-                                   }
-                                   .buttonStyle(RoundedButtonStyle())
-
-                                   Button("Edit Password") {
-                                       isEditPasswordActive = true
-                                   }
-                                   .buttonStyle(RoundedButtonStyle())
-
-                                   Button("Edit Email") {
-                                       isEditEmailActive = true
-                                   }
-                                   .buttonStyle(RoundedButtonStyle())
+       Button(action: {}) {
+                        Image(systemName: "gear")
+                            .font(.title)
+                            .padding()
+                    }
+                    .contextMenu {
+                        Button("Edit Profile") {
+                            isEditProfileActive = true
+                        }
+                        Button("Edit Password") {
+                            isEditPasswordActive = true
+                        }
+                        Button("Edit Email") {
+                            isEditEmailActive = true
+                        }
+                    }
+                    .position(x: 350, y: 600) // Adjust the position as needed
                 }
-                
-                
             }
             .onAppear {
-                
                 userViewModel.getUser()
                 print(userViewModel.getUser())
             }
-        }  .navigationBarBackButtonHidden(true)
-         
-          
-            
-
+        }
+        .navigationBarBackButtonHidden(true)
+        
+        // Navigation Links for Edit Views
+        NavigationLink(destination: GestionUserEditProfil(), isActive: $isEditProfileActive) {
+            EmptyView()
+        }
+        NavigationLink(destination: EditPassword(), isActive: $isEditPasswordActive) {
+            EmptyView()
+        }
+        NavigationLink(destination: EditEmail(), isActive: $isEditEmailActive) {
+            EmptyView()
+        }
     }
-    
-   
-    
 }
 
 
-#Preview {
-    GestionUserProfil()
+struct GestionUserProfil_Previews: PreviewProvider {
+    static var previews: some View {
+        GestionUserProfil()
+    }
 }
+
 struct RoundedButtonStyle: ButtonStyle {
-       func makeBody(configuration: Configuration) -> some View {
-           configuration.label
-               .font(.headline)
-               .padding()
-               .background(Color.blue)
-               .foregroundColor(.white)
-               .cornerRadius(10)
-               .padding(.horizontal, 20)
-               .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
-       }
-   }
-
-
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.headline)
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .padding(.horizontal, 20)
+            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
+    }
+}
