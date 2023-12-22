@@ -1,0 +1,129 @@
+import SwiftUI
+
+struct UserValidationCodeView: View {
+    @StateObject private var userViewModel = UserViewModel()
+    let email: String  // Email passed from the previous view
+
+    @State private var code1: String = ""
+    @State private var code2: String = ""
+    @State private var code3: String = ""
+    @State private var code4: String = ""
+    @State private var navigateToResetPassword = false
+    @State private var showToast = false
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                HStack {
+                    Image(systemName: "arrow.left")
+                        .foregroundColor(Color.blue)
+                    Spacer()
+                }
+                .padding()
+
+                Text("Confirmation")
+                    .foregroundColor(Color.green)
+                    .font(.system(size: 24, weight: .bold))
+                    .padding(.top, 25)
+
+                Text("Enter the validation code sent to your email.")
+                    .foregroundColor(Color.accentColor)
+                    .font(.system(size: 18, weight: .bold))
+                    .padding(.top, 20)
+
+                HStack(spacing: 15) {
+                    ForEach(0..<4, id: \.self) { index in
+                        CodeInputField(text: binding(for: index))
+                    }
+                }
+                .padding(.top, 15)
+
+                Button(action: {
+                    verifyCode()
+                }) {
+                    Text("Verify")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+                .padding(.top, 200)
+
+                Button(action: {
+                    resendCode()
+                }) {
+                    Text("Didn't receive the code? Resend Code")
+                        .foregroundColor(Color.green)
+                }
+                .padding(.top, 10)
+
+                NavigationLink(destination: ResetPasswordView(), isActive: $navigateToResetPassword) {
+                    EmptyView()
+                }
+
+                if showToast {
+                    Text("Verification failed. Please try again.")
+                        .foregroundColor(Color.red)
+                        // Add more styling for your toast message here
+                }
+            }
+            .navigationBarHidden(true)
+        }
+    }
+
+    private func binding(for index: Int) -> Binding<String> {
+        switch index {
+        case 0: return $code1
+        case 1: return $code2
+        case 2: return $code3
+        case 3: return $code4
+        default: fatalError("Index out of range")
+        }
+    }
+
+    private func verifyCode() {
+        let fullCode = code1 + code2 + code3 + code4
+        userViewModel.verifyResetCode(email: email, resetCode: fullCode) { [weak self] isSuccess in
+            DispatchQueue.main.async {
+                if isSuccess {
+                    self?.navigateToResetPassword = true
+                } else {
+                    self?.showToast = true
+                    // Optionally, reset showToast to false after a delay
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        self?.showToast = false
+                    }
+                }
+            }
+        }
+    }
+
+    private func resendCode() {
+        userViewModel.sendResetCode(email: email)
+    }
+}
+
+struct CodeInputField: View {
+    @Binding var text: String
+
+    var body: some View {
+        TextField("", text: $text)
+            .onChange(of: text) { newValue in
+                if newValue.count > 1 || !newValue.allSatisfy({ $0.isNumber }) {
+                    text = String(newValue.prefix(1))
+                }
+            }
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .frame(width: 50, height: 50)
+            .font(.system(size: 24, weight: .bold))
+            .multilineTextAlignment(.center)
+            .keyboardType(.numberPad)
+    }
+}
+
+struct UserValidationCodeView_Previews: PreviewProvider {
+    static var previews: some View {
+        UserValidationCodeView(email: "example@example.com")
+    }
+}

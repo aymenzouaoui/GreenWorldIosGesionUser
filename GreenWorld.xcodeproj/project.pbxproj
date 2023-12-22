@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42620B402B193EE3003A2808 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42620B3F2B193EE3003A2808 /* Login.swift */; };
+		42620B442B193F99003A2808 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42620B432B193F99003A2808 /* User.swift */; };
+		42E99ABB2B2B5F8500C22F4A /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E99ABA2B2B5F8500C22F4A /* ResetPasswordView.swift */; };
+		42F0F5C72B19462F007C8866 /* StringConstants .swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F5C62B19462F007C8866 /* StringConstants .swift */; };
+		42F0F5CB2B19573A007C8866 /* GestionUserEditProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F5CA2B19573A007C8866 /* GestionUserEditProfil.swift */; };
+		42F0F5CD2B196C58007C8866 /* GestionUserProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F5CC2B196C58007C8866 /* GestionUserProfil.swift */; };
+		42F0F5CF2B196CB0007C8866 /* GestionUserSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F5CE2B196CB0007C8866 /* GestionUserSignIn.swift */; };
+		42F0F5D12B196CD8007C8866 /* GestionUserSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F5D02B196CD8007C8866 /* GestionUserSignUp.swift */; };
+		42F0F5D32B196D12007C8866 /* GestionUserForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F5D22B196D12007C8866 /* GestionUserForgetPassword.swift */; };
+		42F0F5D92B196D4E007C8866 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F5D82B196D4E007C8866 /* UserService.swift */; };
+		42F0F5DB2B196D65007C8866 /* UserValidationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F5DA2B196D65007C8866 /* UserValidationCodeView.swift */; };
+		6AFC628D2B2C1891003DFDEC /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 6AFC628C2B2C1891003DFDEC /* FacebookLogin */; };
+		6AFC628F2B2C1894003DFDEC /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6AFC628E2B2C1894003DFDEC /* FacebookCore */; };
+		6AFC62922B2C1960003DFDEC /* FacebookAEM in Frameworks */ = {isa = PBXBuildFile; productRef = 6AFC62912B2C1960003DFDEC /* FacebookAEM */; };
+		6AFC62942B2C1963003DFDEC /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = 6AFC62932B2C1963003DFDEC /* FacebookBasics */; };
+		6AFC62962B2C1967003DFDEC /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 6AFC62952B2C1967003DFDEC /* FacebookShare */; };
+		6AFC62982B2C1AC8003DFDEC /* GreenWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BA72B15134A0039DB3B /* GreenWorldApp.swift */; };
+		9BC6B9C80ED4BEF5E19A7D79 /* Pods_GreenWorld_GreenWorldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24147E1ED999DED2F0842EBE /* Pods_GreenWorld_GreenWorldUITests.framework */; };
+		C4A5C0A859D33B4E2735DB62 /* Pods_GreenWorldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5635B9FEB362109F8566235D /* Pods_GreenWorldTests.framework */; };
+		D135BF5E2B24A54500D36CA1 /* profiltest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135BF5D2B24A54500D36CA1 /* profiltest.swift */; };
+		D1CF4E812B22F88A007847EF /* EditProfilEmailUserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CF4E802B22F88A007847EF /* EditProfilEmailUserName.swift */; };
+		D1CF4E832B22F9FA007847EF /* EditPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CF4E822B22F9FA007847EF /* EditPassword.swift */; };
+		FA884BAA2B15134A0039DB3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BA92B15134A0039DB3B /* ContentView.swift */; };
+		FA884BAC2B15134B0039DB3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA884BAB2B15134B0039DB3B /* Assets.xcassets */; };
+		FA884BAF2B15134B0039DB3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA884BAE2B15134B0039DB3B /* Preview Assets.xcassets */; };
+		FA884BB12B15134B0039DB3B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BB02B15134B0039DB3B /* Persistence.swift */; };
+		FA884BB42B15134B0039DB3B /* GreenWorld.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA884BB22B15134B0039DB3B /* GreenWorld.xcdatamodeld */; };
+		FA884BBE2B15134C0039DB3B /* GreenWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BBD2B15134C0039DB3B /* GreenWorldTests.swift */; };
+		FA884BC82B15134C0039DB3B /* GreenWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BC72B15134C0039DB3B /* GreenWorldUITests.swift */; };
+		FA884BCA2B15134C0039DB3B /* GreenWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BC92B15134C0039DB3B /* GreenWorldUITestsLaunchTests.swift */; };
+		FA884BE02B1515A30039DB3B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BDF2B1515A30039DB3B /* Home.swift */; };
+		FA884BE22B1515C00039DB3B /* favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BE12B1515C00039DB3B /* favorite.swift */; };
+		FA884BE62B1515E60039DB3B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BE52B1515E60039DB3B /* Product.swift */; };
+		FA884BE82B15160F0039DB3B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BE72B15160F0039DB3B /* Event.swift */; };
+		FA884BF02B1519EE0039DB3B /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BEF2B1519EE0039DB3B /* MainTabbedView.swift */; };
+		FA884BF22B151C390039DB3B /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BF12B151C390039DB3B /* SideMenu.swift */; };
+		FA884BF42B151C600039DB3B /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA884BF32B151C600039DB3B /* SideMenuView.swift */; };
+		FAA8F7A12B19295E001FAF0A /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7A02B19295E001FAF0A /* Type.swift */; };
+		FAA8F7A32B1929D6001FAF0A /* Dechets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7A22B1929D6001FAF0A /* Dechets.swift */; };
+		FAA8F7C52B192CFB001FAF0A /* DechetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7C42B192CFB001FAF0A /* DechetsList.swift */; };
+		FAA8F7C72B192D33001FAF0A /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7C62B192D33001FAF0A /* ItemView.swift */; };
+		FAA8F7C92B192D66001FAF0A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7C82B192D66001FAF0A /* DetailView.swift */; };
+		FAA8F7CB2B192E09001FAF0A /* dechetsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7CA2B192E09001FAF0A /* dechetsForm.swift */; };
+		FAA8F7CD2B192E3A001FAF0A /* DetaildechetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7CC2B192E3A001FAF0A /* DetaildechetView.swift */; };
+		FAA8F7CF2B192F84001FAF0A /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7CE2B192F84001FAF0A /* CustomCorner.swift */; };
+		FAA8F7D12B192FB2001FAF0A /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7D02B192FB2001FAF0A /* CustomShape.swift */; };
+		FAA8F7E22B193415001FAF0A /* ViewportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F7E12B193415001FAF0A /* ViewportHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA884BBA2B15134C0039DB3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA884B9C2B15134A0039DB3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA884BA32B15134A0039DB3B;
+			remoteInfo = GreenWorld;
+		};
+		FA884BC42B15134C0039DB3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA884B9C2B15134A0039DB3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA884BA32B15134A0039DB3B;
+			remoteInfo = GreenWorld;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24147E1ED999DED2F0842EBE /* Pods_GreenWorld_GreenWorldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenWorld_GreenWorldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9970392ACC4DC49A11F492 /* Pods-GreenWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenWorld/Pods-GreenWorld.release.xcconfig"; sourceTree = "<group>"; };
+		324B412B0151575342A7AE6F /* Pods-GreenWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenWorldTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenWorldTests/Pods-GreenWorldTests.release.xcconfig"; sourceTree = "<group>"; };
+		42620B3F2B193EE3003A2808 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		42620B432B193F99003A2808 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		42E99ABA2B2B5F8500C22F4A /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		42F0F5C62B19462F007C8866 /* StringConstants .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringConstants .swift"; sourceTree = "<group>"; };
+		42F0F5CA2B19573A007C8866 /* GestionUserEditProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionUserEditProfil.swift; sourceTree = "<group>"; };
+		42F0F5CC2B196C58007C8866 /* GestionUserProfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestionUserProfil.swift; sourceTree = "<group>"; };
+		42F0F5CE2B196CB0007C8866 /* GestionUserSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestionUserSignIn.swift; sourceTree = "<group>"; };
+		42F0F5D02B196CD8007C8866 /* GestionUserSignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestionUserSignUp.swift; sourceTree = "<group>"; };
+		42F0F5D22B196D12007C8866 /* GestionUserForgetPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestionUserForgetPassword.swift; sourceTree = "<group>"; };
+		42F0F5D82B196D4E007C8866 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		42F0F5DA2B196D65007C8866 /* UserValidationCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserValidationCodeView.swift; sourceTree = "<group>"; };
+		452CDA22CF7A486D12CC64BA /* Pods-GreenWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenWorldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenWorldTests/Pods-GreenWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5635B9FEB362109F8566235D /* Pods_GreenWorldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenWorldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		622728655DFCE3340AECA453 /* Pods-GreenWorld-GreenWorldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenWorld-GreenWorldUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenWorld-GreenWorldUITests/Pods-GreenWorld-GreenWorldUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AFC628A2B2C16DE003DFDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6AFC62902B2C189E003DFDEC /* GreenWorld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GreenWorld.entitlements; sourceTree = "<group>"; };
+		9985E843E070F743522E5F08 /* Pods-GreenWorld-GreenWorldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenWorld-GreenWorldUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenWorld-GreenWorldUITests/Pods-GreenWorld-GreenWorldUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AE16DC7F0143FEC2260B156F /* Pods_GreenWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D135BF5D2B24A54500D36CA1 /* profiltest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profiltest.swift; sourceTree = "<group>"; };
+		D1CF4E802B22F88A007847EF /* EditProfilEmailUserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilEmailUserName.swift; sourceTree = "<group>"; };
+		D1CF4E822B22F9FA007847EF /* EditPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPassword.swift; sourceTree = "<group>"; };
+		D8905CB878AE58CC4126540B /* Pods-GreenWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenWorld/Pods-GreenWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		FA884BA42B15134A0039DB3B /* GreenWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA884BA72B15134A0039DB3B /* GreenWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWorldApp.swift; sourceTree = "<group>"; };
+		FA884BA92B15134A0039DB3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA884BAB2B15134B0039DB3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA884BAE2B15134B0039DB3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA884BB02B15134B0039DB3B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FA884BB32B15134B0039DB3B /* GreenWorld.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GreenWorld.xcdatamodel; sourceTree = "<group>"; };
+		FA884BB92B15134C0039DB3B /* GreenWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA884BBD2B15134C0039DB3B /* GreenWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWorldTests.swift; sourceTree = "<group>"; };
+		FA884BC32B15134C0039DB3B /* GreenWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA884BC72B15134C0039DB3B /* GreenWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWorldUITests.swift; sourceTree = "<group>"; };
+		FA884BC92B15134C0039DB3B /* GreenWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA884BDF2B1515A30039DB3B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FA884BE12B1515C00039DB3B /* favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favorite.swift; sourceTree = "<group>"; };
+		FA884BE52B1515E60039DB3B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FA884BE72B15160F0039DB3B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		FA884BEF2B1519EE0039DB3B /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
+		FA884BF12B151C390039DB3B /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		FA884BF32B151C600039DB3B /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		FAA8F7A02B19295E001FAF0A /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		FAA8F7A22B1929D6001FAF0A /* Dechets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dechets.swift; sourceTree = "<group>"; };
+		FAA8F7C42B192CFB001FAF0A /* DechetsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DechetsList.swift; sourceTree = "<group>"; };
+		FAA8F7C62B192D33001FAF0A /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		FAA8F7C82B192D66001FAF0A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FAA8F7CA2B192E09001FAF0A /* dechetsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dechetsForm.swift; sourceTree = "<group>"; };
+		FAA8F7CC2B192E3A001FAF0A /* DetaildechetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaildechetView.swift; sourceTree = "<group>"; };
+		FAA8F7CE2B192F84001FAF0A /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		FAA8F7D02B192FB2001FAF0A /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		FAA8F7E12B193415001FAF0A /* ViewportHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewportHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA884BA12B15134A0039DB3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFC62922B2C1960003DFDEC /* FacebookAEM in Frameworks */,
+				6AFC62942B2C1963003DFDEC /* FacebookBasics in Frameworks */,
+				6AFC628D2B2C1891003DFDEC /* FacebookLogin in Frameworks */,
+				6AFC62962B2C1967003DFDEC /* FacebookShare in Frameworks */,
+				6AFC628F2B2C1894003DFDEC /* FacebookCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA884BB62B15134C0039DB3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A5C0A859D33B4E2735DB62 /* Pods_GreenWorldTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA884BC02B15134C0039DB3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC6B9C80ED4BEF5E19A7D79 /* Pods_GreenWorld_GreenWorldUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42F0F5C52B1945F9007C8866 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F5C62B19462F007C8866 /* StringConstants .swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		6AFC628B2B2C1891003DFDEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE16DC7F0143FEC2260B156F /* Pods_GreenWorld.framework */,
+				24147E1ED999DED2F0842EBE /* Pods_GreenWorld_GreenWorldUITests.framework */,
+				5635B9FEB362109F8566235D /* Pods_GreenWorldTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AE91A8618FC89021D02A22D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8905CB878AE58CC4126540B /* Pods-GreenWorld.debug.xcconfig */,
+				2F9970392ACC4DC49A11F492 /* Pods-GreenWorld.release.xcconfig */,
+				622728655DFCE3340AECA453 /* Pods-GreenWorld-GreenWorldUITests.debug.xcconfig */,
+				9985E843E070F743522E5F08 /* Pods-GreenWorld-GreenWorldUITests.release.xcconfig */,
+				452CDA22CF7A486D12CC64BA /* Pods-GreenWorldTests.debug.xcconfig */,
+				324B412B0151575342A7AE6F /* Pods-GreenWorldTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA884B9B2B15134A0039DB3B = {
+			isa = PBXGroup;
+			children = (
+				FA884BA62B15134A0039DB3B /* GreenWorld */,
+				FA884BBC2B15134C0039DB3B /* GreenWorldTests */,
+				FA884BC62B15134C0039DB3B /* GreenWorldUITests */,
+				FA884BA52B15134A0039DB3B /* Products */,
+				8AE91A8618FC89021D02A22D /* Pods */,
+				6AFC628B2B2C1891003DFDEC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA884BA52B15134A0039DB3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA884BA42B15134A0039DB3B /* GreenWorld.app */,
+				FA884BB92B15134C0039DB3B /* GreenWorldTests.xctest */,
+				FA884BC32B15134C0039DB3B /* GreenWorldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA884BA62B15134A0039DB3B /* GreenWorld */ = {
+			isa = PBXGroup;
+			children = (
+				6AFC62902B2C189E003DFDEC /* GreenWorld.entitlements */,
+				6AFC628A2B2C16DE003DFDEC /* Info.plist */,
+				42F0F5C52B1945F9007C8866 /* Constant */,
+				FAA8F7E02B1933EF001FAF0A /* helper */,
+				FA884BEF2B1519EE0039DB3B /* MainTabbedView.swift */,
+				FA884BD92B1513900039DB3B /* Services */,
+				FA884BD82B1513850039DB3B /* ModelView */,
+				FA884BD72B1513760039DB3B /* Views */,
+				FA884BD62B15136B0039DB3B /* Models */,
+				FA884BA92B15134A0039DB3B /* ContentView.swift */,
+				FA884BAB2B15134B0039DB3B /* Assets.xcassets */,
+				FA884BA72B15134A0039DB3B /* GreenWorldApp.swift */,
+				FA884BB02B15134B0039DB3B /* Persistence.swift */,
+				FA884BB22B15134B0039DB3B /* GreenWorld.xcdatamodeld */,
+				FA884BAD2B15134B0039DB3B /* Preview Content */,
+			);
+			path = GreenWorld;
+			sourceTree = "<group>";
+		};
+		FA884BAD2B15134B0039DB3B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA884BAE2B15134B0039DB3B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA884BBC2B15134C0039DB3B /* GreenWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA884BBD2B15134C0039DB3B /* GreenWorldTests.swift */,
+			);
+			path = GreenWorldTests;
+			sourceTree = "<group>";
+		};
+		FA884BC62B15134C0039DB3B /* GreenWorldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA884BC72B15134C0039DB3B /* GreenWorldUITests.swift */,
+				FA884BC92B15134C0039DB3B /* GreenWorldUITestsLaunchTests.swift */,
+			);
+			path = GreenWorldUITests;
+			sourceTree = "<group>";
+		};
+		FA884BD62B15136B0039DB3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F7A02B19295E001FAF0A /* Type.swift */,
+				FAA8F7A22B1929D6001FAF0A /* Dechets.swift */,
+				42620B432B193F99003A2808 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA884BD72B1513760039DB3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA884BF82B1530310039DB3B /* gestion_product */,
+				FA884BF72B1530250039DB3B /* gestion_event */,
+				FA884BF62B1530130039DB3B /* gestion_user */,
+				FA884BF52B152FEB0039DB3B /* gestion_Dechets */,
+				FA884BDA2B15139B0039DB3B /* SideMenu */,
+				FA884BDF2B1515A30039DB3B /* Home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA884BD82B1513850039DB3B /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F7E62B1934B1001FAF0A /* GestionUser */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		FA884BD92B1513900039DB3B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F7EB2B19356A001FAF0A /* GestionUser */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA884BDA2B15139B0039DB3B /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FA884BF12B151C390039DB3B /* SideMenu.swift */,
+				FA884BF32B151C600039DB3B /* SideMenuView.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		FA884BF52B152FEB0039DB3B /* gestion_Dechets */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F7C42B192CFB001FAF0A /* DechetsList.swift */,
+				FAA8F7C62B192D33001FAF0A /* ItemView.swift */,
+				FAA8F7C82B192D66001FAF0A /* DetailView.swift */,
+				FAA8F7CA2B192E09001FAF0A /* dechetsForm.swift */,
+				FAA8F7CC2B192E3A001FAF0A /* DetaildechetView.swift */,
+				FAA8F7CE2B192F84001FAF0A /* CustomCorner.swift */,
+				FAA8F7D02B192FB2001FAF0A /* CustomShape.swift */,
+			);
+			path = gestion_Dechets;
+			sourceTree = "<group>";
+		};
+		FA884BF62B1530130039DB3B /* gestion_user */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F5CC2B196C58007C8866 /* GestionUserProfil.swift */,
+				42F0F5CE2B196CB0007C8866 /* GestionUserSignIn.swift */,
+				42F0F5D02B196CD8007C8866 /* GestionUserSignUp.swift */,
+				42F0F5D22B196D12007C8866 /* GestionUserForgetPassword.swift */,
+				42F0F5DA2B196D65007C8866 /* UserValidationCodeView.swift */,
+				42F0F5CA2B19573A007C8866 /* GestionUserEditProfil.swift */,
+				D1CF4E802B22F88A007847EF /* EditProfilEmailUserName.swift */,
+				D1CF4E822B22F9FA007847EF /* EditPassword.swift */,
+				D135BF5D2B24A54500D36CA1 /* profiltest.swift */,
+				42E99ABA2B2B5F8500C22F4A /* ResetPasswordView.swift */,
+			);
+			path = gestion_user;
+			sourceTree = "<group>";
+		};
+		FA884BF72B1530250039DB3B /* gestion_event */ = {
+			isa = PBXGroup;
+			children = (
+				FA884BE72B15160F0039DB3B /* Event.swift */,
+			);
+			path = gestion_event;
+			sourceTree = "<group>";
+		};
+		FA884BF82B1530310039DB3B /* gestion_product */ = {
+			isa = PBXGroup;
+			children = (
+				FA884BE52B1515E60039DB3B /* Product.swift */,
+				FA884BE12B1515C00039DB3B /* favorite.swift */,
+			);
+			path = gestion_product;
+			sourceTree = "<group>";
+		};
+		FAA8F7E02B1933EF001FAF0A /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F7E12B193415001FAF0A /* ViewportHelper.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		FAA8F7E62B1934B1001FAF0A /* GestionUser */ = {
+			isa = PBXGroup;
+			children = (
+				42620B3F2B193EE3003A2808 /* Login.swift */,
+			);
+			path = GestionUser;
+			sourceTree = "<group>";
+		};
+		FAA8F7EB2B19356A001FAF0A /* GestionUser */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F5D82B196D4E007C8866 /* UserService.swift */,
+			);
+			path = GestionUser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA884BA32B15134A0039DB3B /* GreenWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA884BCD2B15134C0039DB3B /* Build configuration list for PBXNativeTarget "GreenWorld" */;
+			buildPhases = (
+				9DF4AE772044F763F24E35D1 /* [CP] Check Pods Manifest.lock */,
+				FA884BA02B15134A0039DB3B /* Sources */,
+				FA884BA12B15134A0039DB3B /* Frameworks */,
+				FA884BA22B15134A0039DB3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreenWorld;
+			packageProductDependencies = (
+				6AFC628C2B2C1891003DFDEC /* FacebookLogin */,
+				6AFC628E2B2C1894003DFDEC /* FacebookCore */,
+				6AFC62912B2C1960003DFDEC /* FacebookAEM */,
+				6AFC62932B2C1963003DFDEC /* FacebookBasics */,
+				6AFC62952B2C1967003DFDEC /* FacebookShare */,
+			);
+			productName = GreenWorld;
+			productReference = FA884BA42B15134A0039DB3B /* GreenWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA884BB82B15134C0039DB3B /* GreenWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA884BD02B15134C0039DB3B /* Build configuration list for PBXNativeTarget "GreenWorldTests" */;
+			buildPhases = (
+				842FE17101F0B0EB2F73BF2A /* [CP] Check Pods Manifest.lock */,
+				FA884BB52B15134C0039DB3B /* Sources */,
+				FA884BB62B15134C0039DB3B /* Frameworks */,
+				FA884BB72B15134C0039DB3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA884BBB2B15134C0039DB3B /* PBXTargetDependency */,
+			);
+			name = GreenWorldTests;
+			productName = GreenWorldTests;
+			productReference = FA884BB92B15134C0039DB3B /* GreenWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA884BC22B15134C0039DB3B /* GreenWorldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA884BD32B15134C0039DB3B /* Build configuration list for PBXNativeTarget "GreenWorldUITests" */;
+			buildPhases = (
+				DE3CB6766329A89C659BCA2D /* [CP] Check Pods Manifest.lock */,
+				FA884BBF2B15134C0039DB3B /* Sources */,
+				FA884BC02B15134C0039DB3B /* Frameworks */,
+				FA884BC12B15134C0039DB3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA884BC52B15134C0039DB3B /* PBXTargetDependency */,
+			);
+			name = GreenWorldUITests;
+			productName = GreenWorldUITests;
+			productReference = FA884BC32B15134C0039DB3B /* GreenWorldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA884B9C2B15134A0039DB3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FA884BA32B15134A0039DB3B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FA884BB82B15134C0039DB3B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FA884BA32B15134A0039DB3B;
+					};
+					FA884BC22B15134C0039DB3B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FA884BA32B15134A0039DB3B;
+					};
+				};
+			};
+			buildConfigurationList = FA884B9F2B15134A0039DB3B /* Build configuration list for PBXProject "GreenWorld" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA884B9B2B15134A0039DB3B;
+			packageReferences = (
+				6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				6AFC62872B2BF7BB003DFDEC /* XCRemoteSwiftPackageReference "cloudinary_ios" */,
+			);
+			productRefGroup = FA884BA52B15134A0039DB3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA884BA32B15134A0039DB3B /* GreenWorld */,
+				FA884BB82B15134C0039DB3B /* GreenWorldTests */,
+				FA884BC22B15134C0039DB3B /* GreenWorldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA884BA22B15134A0039DB3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA884BAF2B15134B0039DB3B /* Preview Assets.xcassets in Resources */,
+				FA884BAC2B15134B0039DB3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA884BB72B15134C0039DB3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA884BC12B15134C0039DB3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		842FE17101F0B0EB2F73BF2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreenWorldTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DF4AE772044F763F24E35D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreenWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3CB6766329A89C659BCA2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreenWorld-GreenWorldUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA884BA02B15134A0039DB3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA8F7CB2B192E09001FAF0A /* dechetsForm.swift in Sources */,
+				42620B402B193EE3003A2808 /* Login.swift in Sources */,
+				42620B442B193F99003A2808 /* User.swift in Sources */,
+				FA884BE82B15160F0039DB3B /* Event.swift in Sources */,
+				FA884BF42B151C600039DB3B /* SideMenuView.swift in Sources */,
+				42E99ABB2B2B5F8500C22F4A /* ResetPasswordView.swift in Sources */,
+				42F0F5C72B19462F007C8866 /* StringConstants .swift in Sources */,
+				FAA8F7C52B192CFB001FAF0A /* DechetsList.swift in Sources */,
+				FA884BF22B151C390039DB3B /* SideMenu.swift in Sources */,
+				42F0F5D32B196D12007C8866 /* GestionUserForgetPassword.swift in Sources */,
+				FAA8F7A12B19295E001FAF0A /* Type.swift in Sources */,
+				42F0F5CF2B196CB0007C8866 /* GestionUserSignIn.swift in Sources */,
+				FAA8F7CD2B192E3A001FAF0A /* DetaildechetView.swift in Sources */,
+				D1CF4E812B22F88A007847EF /* EditProfilEmailUserName.swift in Sources */,
+				42F0F5D12B196CD8007C8866 /* GestionUserSignUp.swift in Sources */,
+				FA884BF02B1519EE0039DB3B /* MainTabbedView.swift in Sources */,
+				6AFC62982B2C1AC8003DFDEC /* GreenWorldApp.swift in Sources */,
+				FAA8F7D12B192FB2001FAF0A /* CustomShape.swift in Sources */,
+				FAA8F7A32B1929D6001FAF0A /* Dechets.swift in Sources */,
+				FA884BE22B1515C00039DB3B /* favorite.swift in Sources */,
+				FA884BB42B15134B0039DB3B /* GreenWorld.xcdatamodeld in Sources */,
+				42F0F5D92B196D4E007C8866 /* UserService.swift in Sources */,
+				FA884BB12B15134B0039DB3B /* Persistence.swift in Sources */,
+				FAA8F7C72B192D33001FAF0A /* ItemView.swift in Sources */,
+				D135BF5E2B24A54500D36CA1 /* profiltest.swift in Sources */,
+				FA884BAA2B15134A0039DB3B /* ContentView.swift in Sources */,
+				42F0F5CB2B19573A007C8866 /* GestionUserEditProfil.swift in Sources */,
+				FA884BE62B1515E60039DB3B /* Product.swift in Sources */,
+				FAA8F7C92B192D66001FAF0A /* DetailView.swift in Sources */,
+				FAA8F7E22B193415001FAF0A /* ViewportHelper.swift in Sources */,
+				FAA8F7CF2B192F84001FAF0A /* CustomCorner.swift in Sources */,
+				D1CF4E832B22F9FA007847EF /* EditPassword.swift in Sources */,
+				42F0F5DB2B196D65007C8866 /* UserValidationCodeView.swift in Sources */,
+				42F0F5CD2B196C58007C8866 /* GestionUserProfil.swift in Sources */,
+				FA884BE02B1515A30039DB3B /* Home.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA884BB52B15134C0039DB3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA884BBE2B15134C0039DB3B /* GreenWorldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA884BBF2B15134C0039DB3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA884BC82B15134C0039DB3B /* GreenWorldUITests.swift in Sources */,
+				FA884BCA2B15134C0039DB3B /* GreenWorldUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA884BBB2B15134C0039DB3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA884BA32B15134A0039DB3B /* GreenWorld */;
+			targetProxy = FA884BBA2B15134C0039DB3B /* PBXContainerItemProxy */;
+		};
+		FA884BC52B15134C0039DB3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA884BA32B15134A0039DB3B /* GreenWorld */;
+			targetProxy = FA884BC42B15134C0039DB3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA884BCB2B15134C0039DB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA884BCC2B15134C0039DB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA884BCE2B15134C0039DB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8905CB878AE58CC4126540B /* Pods-GreenWorld.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GreenWorld/GreenWorld.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GreenWorld/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreenWorld/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.GreenWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA884BCF2B15134C0039DB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9970392ACC4DC49A11F492 /* Pods-GreenWorld.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GreenWorld/GreenWorld.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GreenWorld/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreenWorld/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.GreenWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA884BD12B15134C0039DB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 452CDA22CF7A486D12CC64BA /* Pods-GreenWorldTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.GreenWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenWorld.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GreenWorld";
+			};
+			name = Debug;
+		};
+		FA884BD22B15134C0039DB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324B412B0151575342A7AE6F /* Pods-GreenWorldTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.GreenWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenWorld.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GreenWorld";
+			};
+			name = Release;
+		};
+		FA884BD42B15134C0039DB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 622728655DFCE3340AECA453 /* Pods-GreenWorld-GreenWorldUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.GreenWorldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreenWorld;
+			};
+			name = Debug;
+		};
+		FA884BD52B15134C0039DB3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9985E843E070F743522E5F08 /* Pods-GreenWorld-GreenWorldUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.GreenWorldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreenWorld;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA884B9F2B15134A0039DB3B /* Build configuration list for PBXProject "GreenWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA884BCB2B15134C0039DB3B /* Debug */,
+				FA884BCC2B15134C0039DB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA884BCD2B15134C0039DB3B /* Build configuration list for PBXNativeTarget "GreenWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA884BCE2B15134C0039DB3B /* Debug */,
+				FA884BCF2B15134C0039DB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA884BD02B15134C0039DB3B /* Build configuration list for PBXNativeTarget "GreenWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA884BD12B15134C0039DB3B /* Debug */,
+				FA884BD22B15134C0039DB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA884BD32B15134C0039DB3B /* Build configuration list for PBXNativeTarget "GreenWorldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA884BD42B15134C0039DB3B /* Debug */,
+				FA884BD52B15134C0039DB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+		6AFC62872B2BF7BB003DFDEC /* XCRemoteSwiftPackageReference "cloudinary_ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cloudinary/cloudinary_ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AFC628C2B2C1891003DFDEC /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		6AFC628E2B2C1894003DFDEC /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		6AFC62912B2C1960003DFDEC /* FacebookAEM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookAEM;
+		};
+		6AFC62932B2C1963003DFDEC /* FacebookBasics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookBasics;
+		};
+		6AFC62952B2C1967003DFDEC /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AFC62862B2BDC28003DFDEC /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FA884BB22B15134B0039DB3B /* GreenWorld.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA884BB32B15134B0039DB3B /* GreenWorld.xcdatamodel */,
+			);
+			currentVersion = FA884BB32B15134B0039DB3B /* GreenWorld.xcdatamodel */;
+			path = GreenWorld.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA884B9C2B15134A0039DB3B /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_GreenWorld_GreenWorldUITests {
+  umbrella header "Pods-GreenWorld-GreenWorldUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

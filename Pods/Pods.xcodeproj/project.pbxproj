@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37718C527EE8B7041D3F4B61F195A195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		54420A736C3F341DC7084F95C770EA57 /* Pods-GreenWorld-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F6C120F8D9B82E898A739A4AE4F44A /* Pods-GreenWorld-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D38A5CE3272F91E1B1D30045801975 /* Pods-GreenWorld-GreenWorldUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0317353FFD1886679A01B126F14B4A /* Pods-GreenWorld-GreenWorldUITests-dummy.m */; };
+		87AC54BAA001C998EDB1682245391389 /* Pods-GreenWorldTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F53A42B1459942C646B391B47C4380 /* Pods-GreenWorldTests-dummy.m */; };
+		88ED77EC704B8E35AE1CF6C06D4D7133 /* Pods-GreenWorld-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A317AF71719D1F48327736F3742F630E /* Pods-GreenWorld-dummy.m */; };
+		8939D79AC8AC06B29A0BF677E01C145E /* Pods-GreenWorld-GreenWorldUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADF2E4326C1965EADA8B57D7E5E36BE /* Pods-GreenWorld-GreenWorldUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFA2B7F9E6694442E732682C7794C09E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C8D830943296660D3C043B59788665AF /* Pods-GreenWorldTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A4BA205D7C0C1F36E0C74A8AF0F572 /* Pods-GreenWorldTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2BDBC6CFD10A590766638038740D463 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		629FB3216294E1F4ADE50B8CC7C97ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F5D3FBC4A1986CEEBC7E21D128A4838;
+			remoteInfo = "Pods-GreenWorld";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		094D06C99A6350F961E81AFB186CDE8F /* Pods-GreenWorld-GreenWorldUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreenWorld-GreenWorldUITests-Info.plist"; sourceTree = "<group>"; };
+		341846C3289874A49C769F40BAFA1B5D /* Pods-GreenWorldTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GreenWorldTests.modulemap"; sourceTree = "<group>"; };
+		357CA4FDA82027B0C763D93BC182FD8F /* Pods-GreenWorld.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GreenWorld.modulemap"; sourceTree = "<group>"; };
+		3C07E83F6FA150C0592E127A9114325B /* Pods-GreenWorldTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GreenWorldTests"; path = Pods_GreenWorldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41022D293E9F33950B6934F40DDE838E /* Pods-GreenWorld */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GreenWorld"; path = Pods_GreenWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60535A5C34F3593EC71CE52728DB5604 /* Pods-GreenWorld-GreenWorldUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GreenWorld-GreenWorldUITests.modulemap"; sourceTree = "<group>"; };
+		69BEEFDA9B41279F67D659C9FC322394 /* Pods-GreenWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreenWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		6FABACD8CCD95545ACF4492A21B0137F /* Pods-GreenWorld-GreenWorldUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreenWorld-GreenWorldUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		70F53A42B1459942C646B391B47C4380 /* Pods-GreenWorldTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GreenWorldTests-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76F6C120F8D9B82E898A739A4AE4F44A /* Pods-GreenWorld-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GreenWorld-umbrella.h"; sourceTree = "<group>"; };
+		790488345E6A5CB945F33A17E6E159B1 /* Pods-GreenWorldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreenWorldTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DCEF8C088F8A8329876786886073329 /* Pods-GreenWorld-GreenWorldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreenWorld-GreenWorldUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		854FE033BEB64DC94A9035E7DBD027A1 /* Pods-GreenWorld-GreenWorldUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GreenWorld-GreenWorldUITests"; path = Pods_GreenWorld_GreenWorldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADF2E4326C1965EADA8B57D7E5E36BE /* Pods-GreenWorld-GreenWorldUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GreenWorld-GreenWorldUITests-umbrella.h"; sourceTree = "<group>"; };
+		9A0317353FFD1886679A01B126F14B4A /* Pods-GreenWorld-GreenWorldUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GreenWorld-GreenWorldUITests-dummy.m"; sourceTree = "<group>"; };
+		9AF54FCC64F37DCC9059E26FA8201806 /* Pods-GreenWorldTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GreenWorldTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A058056BA3EE0E2E57998448CADB6D8B /* Pods-GreenWorldTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreenWorldTests-Info.plist"; sourceTree = "<group>"; };
+		A317AF71719D1F48327736F3742F630E /* Pods-GreenWorld-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GreenWorld-dummy.m"; sourceTree = "<group>"; };
+		A6D06C1A777A5B421F04ADC6CB28AE9A /* Pods-GreenWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreenWorld.release.xcconfig"; sourceTree = "<group>"; };
+		B0A4BA205D7C0C1F36E0C74A8AF0F572 /* Pods-GreenWorldTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GreenWorldTests-umbrella.h"; sourceTree = "<group>"; };
+		BCAC01F8355D8B2F47540E7F2E68E770 /* Pods-GreenWorld-GreenWorldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreenWorld-GreenWorldUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D04DF4D9DB7E6A0869A8B3B355369A41 /* Pods-GreenWorld-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreenWorld-Info.plist"; sourceTree = "<group>"; };
+		D522EB2B2D2B05F64885D7AD81E7EE9C /* Pods-GreenWorld-GreenWorldUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GreenWorld-GreenWorldUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA07E2E9E8C0ADA8AB03A677BF8BAB27 /* Pods-GreenWorld-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreenWorld-acknowledgements.plist"; sourceTree = "<group>"; };
+		F376E8EAF7FE94C4A2BBC7843D8AB1CB /* Pods-GreenWorldTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreenWorldTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB159D039E40B4BD494DA98B719EA9B0 /* Pods-GreenWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreenWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC1C462A0C6E88B73356FC0A9DFA26E4 /* Pods-GreenWorld-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GreenWorld-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5292494D439FBDE2D13A0120EB23A8B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BDBC6CFD10A590766638038740D463 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9145AF0C44117C4AC7711C29CB3DA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37718C527EE8B7041D3F4B61F195A195 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB0768207628A6048748ED8364B3B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA2B7F9E6694442E732682C7794C09E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E5E3F9A64CCBAC3B128DF28DEBF71D4 /* Pods-GreenWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				341846C3289874A49C769F40BAFA1B5D /* Pods-GreenWorldTests.modulemap */,
+				9AF54FCC64F37DCC9059E26FA8201806 /* Pods-GreenWorldTests-acknowledgements.markdown */,
+				F376E8EAF7FE94C4A2BBC7843D8AB1CB /* Pods-GreenWorldTests-acknowledgements.plist */,
+				70F53A42B1459942C646B391B47C4380 /* Pods-GreenWorldTests-dummy.m */,
+				A058056BA3EE0E2E57998448CADB6D8B /* Pods-GreenWorldTests-Info.plist */,
+				B0A4BA205D7C0C1F36E0C74A8AF0F572 /* Pods-GreenWorldTests-umbrella.h */,
+				FB159D039E40B4BD494DA98B719EA9B0 /* Pods-GreenWorldTests.debug.xcconfig */,
+				790488345E6A5CB945F33A17E6E159B1 /* Pods-GreenWorldTests.release.xcconfig */,
+			);
+			name = "Pods-GreenWorldTests";
+			path = "Target Support Files/Pods-GreenWorldTests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9BA0F797487DA02A24AF652A7B65EE6F /* Pods-GreenWorld */ = {
+			isa = PBXGroup;
+			children = (
+				357CA4FDA82027B0C763D93BC182FD8F /* Pods-GreenWorld.modulemap */,
+				FC1C462A0C6E88B73356FC0A9DFA26E4 /* Pods-GreenWorld-acknowledgements.markdown */,
+				DA07E2E9E8C0ADA8AB03A677BF8BAB27 /* Pods-GreenWorld-acknowledgements.plist */,
+				A317AF71719D1F48327736F3742F630E /* Pods-GreenWorld-dummy.m */,
+				D04DF4D9DB7E6A0869A8B3B355369A41 /* Pods-GreenWorld-Info.plist */,
+				76F6C120F8D9B82E898A739A4AE4F44A /* Pods-GreenWorld-umbrella.h */,
+				69BEEFDA9B41279F67D659C9FC322394 /* Pods-GreenWorld.debug.xcconfig */,
+				A6D06C1A777A5B421F04ADC6CB28AE9A /* Pods-GreenWorld.release.xcconfig */,
+			);
+			name = "Pods-GreenWorld";
+			path = "Target Support Files/Pods-GreenWorld";
+			sourceTree = "<group>";
+		};
+		C3FB20ED706AD13EEA237560E81B814B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41022D293E9F33950B6934F40DDE838E /* Pods-GreenWorld */,
+				854FE033BEB64DC94A9035E7DBD027A1 /* Pods-GreenWorld-GreenWorldUITests */,
+				3C07E83F6FA150C0592E127A9114325B /* Pods-GreenWorldTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE7790305E8FC5319506B4167675A311 /* Pods-GreenWorld-GreenWorldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60535A5C34F3593EC71CE52728DB5604 /* Pods-GreenWorld-GreenWorldUITests.modulemap */,
+				D522EB2B2D2B05F64885D7AD81E7EE9C /* Pods-GreenWorld-GreenWorldUITests-acknowledgements.markdown */,
+				6FABACD8CCD95545ACF4492A21B0137F /* Pods-GreenWorld-GreenWorldUITests-acknowledgements.plist */,
+				9A0317353FFD1886679A01B126F14B4A /* Pods-GreenWorld-GreenWorldUITests-dummy.m */,
+				094D06C99A6350F961E81AFB186CDE8F /* Pods-GreenWorld-GreenWorldUITests-Info.plist */,
+				8ADF2E4326C1965EADA8B57D7E5E36BE /* Pods-GreenWorld-GreenWorldUITests-umbrella.h */,
+				7DCEF8C088F8A8329876786886073329 /* Pods-GreenWorld-GreenWorldUITests.debug.xcconfig */,
+				BCAC01F8355D8B2F47540E7F2E68E770 /* Pods-GreenWorld-GreenWorldUITests.release.xcconfig */,
+			);
+			name = "Pods-GreenWorld-GreenWorldUITests";
+			path = "Target Support Files/Pods-GreenWorld-GreenWorldUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C3FB20ED706AD13EEA237560E81B814B /* Products */,
+				E5542DD43ED52C2DB6AD81EFD57F3F4F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5542DD43ED52C2DB6AD81EFD57F3F4F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BA0F797487DA02A24AF652A7B65EE6F /* Pods-GreenWorld */,
+				CE7790305E8FC5319506B4167675A311 /* Pods-GreenWorld-GreenWorldUITests */,
+				4E5E3F9A64CCBAC3B128DF28DEBF71D4 /* Pods-GreenWorldTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		31944542144B6048ED5ACC308B95D5D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8939D79AC8AC06B29A0BF677E01C145E /* Pods-GreenWorld-GreenWorldUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CA8B325400C056C85DF1BEFEEB5114 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D830943296660D3C043B59788665AF /* Pods-GreenWorldTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2B0CA63BA37DB15C089359B940F6D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54420A736C3F341DC7084F95C770EA57 /* Pods-GreenWorld-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31F3ADC562594C8A00100B2AC97273F4 /* Pods-GreenWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02305B7BC7A88589E38C9F37A063EC44 /* Build configuration list for PBXNativeTarget "Pods-GreenWorldTests" */;
+			buildPhases = (
+				55CA8B325400C056C85DF1BEFEEB5114 /* Headers */,
+				743B41E15CEF89CF7E1E7373882ECD2F /* Sources */,
+				FDB0768207628A6048748ED8364B3B9A /* Frameworks */,
+				4AF7505072F6C1B9A88080E96C18F1E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F00C9C00D410F8C2ACDAE43E562F3DCC /* PBXTargetDependency */,
+			);
+			name = "Pods-GreenWorldTests";
+			productName = Pods_GreenWorldTests;
+			productReference = 3C07E83F6FA150C0592E127A9114325B /* Pods-GreenWorldTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F5D3FBC4A1986CEEBC7E21D128A4838 /* Pods-GreenWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA78D7AFF336D95425EC992E366D5E7 /* Build configuration list for PBXNativeTarget "Pods-GreenWorld" */;
+			buildPhases = (
+				6C2B0CA63BA37DB15C089359B940F6D8 /* Headers */,
+				5DC404B2B3111A29C0D8C0CA93D44DDA /* Sources */,
+				5292494D439FBDE2D13A0120EB23A8B5 /* Frameworks */,
+				5182E0052C8F879109804327F985F61A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GreenWorld";
+			productName = Pods_GreenWorld;
+			productReference = 41022D293E9F33950B6934F40DDE838E /* Pods-GreenWorld */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0D686EACE501AF5B9571EAFD980FA5D /* Pods-GreenWorld-GreenWorldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE693B54DB81A2CBF97A51E62350174 /* Build configuration list for PBXNativeTarget "Pods-GreenWorld-GreenWorldUITests" */;
+			buildPhases = (
+				31944542144B6048ED5ACC308B95D5D5 /* Headers */,
+				412CFA3F12B60812AF48C51305E1C9AF /* Sources */,
+				A9145AF0C44117C4AC7711C29CB3DA82 /* Frameworks */,
+				430C11554D3C1BDCCFCB99C074FA6551 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GreenWorld-GreenWorldUITests";
+			productName = Pods_GreenWorld_GreenWorldUITests;
+			productReference = 854FE033BEB64DC94A9035E7DBD027A1 /* Pods-GreenWorld-GreenWorldUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C3FB20ED706AD13EEA237560E81B814B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F5D3FBC4A1986CEEBC7E21D128A4838 /* Pods-GreenWorld */,
+				B0D686EACE501AF5B9571EAFD980FA5D /* Pods-GreenWorld-GreenWorldUITests */,
+				31F3ADC562594C8A00100B2AC97273F4 /* Pods-GreenWorldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		430C11554D3C1BDCCFCB99C074FA6551 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF7505072F6C1B9A88080E96C18F1E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5182E0052C8F879109804327F985F61A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		412CFA3F12B60812AF48C51305E1C9AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D38A5CE3272F91E1B1D30045801975 /* Pods-GreenWorld-GreenWorldUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DC404B2B3111A29C0D8C0CA93D44DDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88ED77EC704B8E35AE1CF6C06D4D7133 /* Pods-GreenWorld-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743B41E15CEF89CF7E1E7373882ECD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AC54BAA001C998EDB1682245391389 /* Pods-GreenWorldTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F00C9C00D410F8C2ACDAE43E562F3DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GreenWorld";
+			target = 7F5D3FBC4A1986CEEBC7E21D128A4838 /* Pods-GreenWorld */;
+			targetProxy = 629FB3216294E1F4ADE50B8CC7C97ACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D7A397122F25E44A4EEC9DF76B7D33D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790488345E6A5CB945F33A17E6E159B1 /* Pods-GreenWorldTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GreenWorldTests/Pods-GreenWorldTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreenWorldTests/Pods-GreenWorldTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7437092084F18D7CCD5A091490679CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69BEEFDA9B41279F67D659C9FC322394 /* Pods-GreenWorld.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GreenWorld/Pods-GreenWorld-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreenWorld/Pods-GreenWorld.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88E51BF714F48EBB6BB1222039A865F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCAC01F8355D8B2F47540E7F2E68E770 /* Pods-GreenWorld-GreenWorldUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GreenWorld-GreenWorldUITests/Pods-GreenWorld-GreenWorldUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreenWorld-GreenWorldUITests/Pods-GreenWorld-GreenWorldUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9288CC705AE299BA9CF7A7551551979D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D06C1A777A5B421F04ADC6CB28AE9A /* Pods-GreenWorld.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GreenWorld/Pods-GreenWorld-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreenWorld/Pods-GreenWorld.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94159528EF43B317416E8E6524F29078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB159D039E40B4BD494DA98B719EA9B0 /* Pods-GreenWorldTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GreenWorldTests/Pods-GreenWorldTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreenWorldTests/Pods-GreenWorldTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A776C1DA702A8191CA923193CCEC0307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DCEF8C088F8A8329876786886073329 /* Pods-GreenWorld-GreenWorldUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GreenWorld-GreenWorldUITests/Pods-GreenWorld-GreenWorldUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreenWorld-GreenWorldUITests/Pods-GreenWorld-GreenWorldUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02305B7BC7A88589E38C9F37A063EC44 /* Build configuration list for PBXNativeTarget "Pods-GreenWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94159528EF43B317416E8E6524F29078 /* Debug */,
+				4D7A397122F25E44A4EEC9DF76B7D33D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BA78D7AFF336D95425EC992E366D5E7 /* Build configuration list for PBXNativeTarget "Pods-GreenWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7437092084F18D7CCD5A091490679CF2 /* Debug */,
+				9288CC705AE299BA9CF7A7551551979D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE693B54DB81A2CBF97A51E62350174 /* Build configuration list for PBXNativeTarget "Pods-GreenWorld-GreenWorldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A776C1DA702A8191CA923193CCEC0307 /* Debug */,
+				88E51BF714F48EBB6BB1222039A865F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
