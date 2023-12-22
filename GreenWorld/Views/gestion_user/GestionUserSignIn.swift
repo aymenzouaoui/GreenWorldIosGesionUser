@@ -237,8 +237,11 @@ struct GestionUserSignIn: View {
                                                         
                                                         // Navigate to the FlotteMainView
                                                         navigationLinkActive = true
+                                                        print("navigate")
                                                     }
                                                 }
+                                                
+                                                
                                             } else {
                                                 print("Facebook login cancelled")
                                             }
