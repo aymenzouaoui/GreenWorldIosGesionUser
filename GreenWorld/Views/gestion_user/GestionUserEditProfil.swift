@@ -223,4 +223,159 @@ struct UserUpdateView_Previews: PreviewProvider {
         GestionUserEditProfil()
     }
 }
+/*import SwiftUI
+
+struct GestionUserEditProfil: View {
+    @State private var selectedImage: Image?
+    @State private var showImagePicker = false
+    @State private var selectedImageURL: URL?
+    @State private var email: String = ""
+    @State private var username: String = ""
+    @State private var phoneNumber: String = ""
+    @State private var userImage: Image? = nil
+    @State private var buttonScale: CGFloat = 1.0 // Added for button animation
+    @State private var isShowingDialog = false // Added for showing dialog
+    @StateObject private var userViewModel = UserViewModel()
+
+    func loadImageFromURL() {
+        guard let imageURLString = userViewModel.user?.imageRes,
+              let imageURL = URL(string: imageURLString) else {
+            return
+        }
+
+        URLSession.shared.dataTask(with: imageURL) { data, response, error in
+            guard let data = data, error == nil else {
+                return
+            }
+
+            DispatchQueue.main.async {
+                if let uiImage = UIImage(data: data) {
+                    self.userImage = Image(uiImage: uiImage)
+                } else {
+                    self.userImage = nil
+                }
+            }
+        }.resume()
+    }
+
+    var body: some View {
+        VStack {
+            Button(action: {
+                showImagePicker = true
+            }) {
+                ZStack {
+                    if let imageURL = URL(string: userViewModel.user?.imageRes ?? "") {
+                        AsyncImage(url: imageURL) { phase in
+                            switch phase {
+                            case .empty:
+                                ProgressView()
+                            case .success(let image):
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .clipShape(Ellipse())
+                                    .frame(width: 200, height: 200)
+                                    .overlay(Ellipse().stroke(Color.green, lineWidth: 3))
+                                    .shadow(color: Color(red: 0.40, green: 0.40, blue: 0.40, opacity: 0.15), radius: 10, y: 4)
+                                    .position(x: 180, y: 200)
+                            case .failure(let error):
+                                Text("Error loading image")
+                            @unknown default:
+                                EmptyView()
+                            }
+                        }
+                    } else {
+                        Text("Invalid image URL")
+                    }
+                }
+                .padding()
+                .scaleEffect(buttonScale)
+            }
+
+            Button(action: {
+                showConfirmationDialog()
+            }) {
+                Text("Update Profile")
+                    .customizeButton()
+                    .scaleEffect(buttonScale)
+            }
+            .onTapGesture {
+                withAnimation {
+                    buttonScale = 0.8
+                }
+
+                withAnimation {
+                    buttonScale = 1.0
+                }
+            }
+            .alert(isPresented: $isShowingDialog) {
+                Alert(
+                    title: Text("Confirmation"),
+                    message: Text("Are you sure you want to update your profile?"),
+                    primaryButton: .default(Text("Yes")) {
+                        updateProfile()
+                    },
+                    secondaryButton: .cancel(Text("No"))
+                )
+            }
+
+            TextField(userViewModel.user?.email ?? "", text: $email)
+                .customizeTextField()
+
+            TextField(userViewModel.user?.userName ?? "", text: $username)
+                .customizeTextField()
+
+            TextField(userViewModel.user?.numTel ?? "", text: $phoneNumber)
+                .customizeTextField()
+        }
+        .onAppear {
+            loadImageFromURL()
+            userViewModel.getUser()
+        }
+        .sheet(isPresented: $showImagePicker) {
+            ImagePickerView(selectedImage: $selectedImage, selectedImageURL: $selectedImageURL, userImage: $userImage)
+        }
+    }
+
+    func showConfirmationDialog() {
+        isShowingDialog = true
+    }
+
+    func updateProfile() {
+        // Add your logic for updating the profile here
+    }
+}
+
+extension View {
+    func customizeTextField() -> some View {
+        self
+            .foregroundColor(.gray)
+            .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(Color.green, lineWidth: 2)
+                    .padding(5)
+            )
+            .overlay(
+                HStack {
+                    Spacer().frame(width: 7)
+                    Image(systemName: "envelope")
+                        .foregroundColor(Color(red: 0.13, green: 0.61, blue: 0.49))
+                        .frame(width: 20, height: 20)
+                    Spacer()
+                }
+            )
+    }
+
+    func customizeButton() -> some View {
+        self
+            .font(Font.custom("Inter", size: 20).weight(.bold))
+            .foregroundColor(.white)
+            .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+            .frame(width: 200, height: 51)
+            .background(Color(red: 0.13, green: 0.61, blue: 0.49))
+            .cornerRadius(12)
+    }
+}
+*/
 
